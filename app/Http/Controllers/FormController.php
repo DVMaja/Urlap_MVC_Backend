@@ -17,12 +17,13 @@ class FormController extends Controller
     {
         $record = new Form();
         $record->nev = $request->nev;
-        $record->szul = $request->szul_ev;
+        $record->szul_ev = $request->szul_ev;
         $record->save();
     }
     public function show($id)
     {
         $forms = Form::find($id);
+        return $forms;
     }
     public function destroy($id)
     {
@@ -32,7 +33,7 @@ class FormController extends Controller
     {
         $form = Form::find($id);
         $form->nev = $request->nev;
-        $form->szul = $request->szul_ev;
+        $form->szul_ev = $request->szul_ev;
         $form->save();
     }
 }
