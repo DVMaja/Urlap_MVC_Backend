@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://www.thunderclient.com'],//valahogy ide kéne megadnom a frontend elérését?
 
     'allowed_origins_patterns' => [],
 
