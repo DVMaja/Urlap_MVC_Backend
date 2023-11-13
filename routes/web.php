@@ -20,5 +20,5 @@ Route::get('/', function () {
 
 Route::get('/forms', [FormController::class, 'index']);
 Route::post('/forms', [FormController::class, 'store']);
-/* Route::put('/writers/{id}', [WriterController::class, 'update']);
-Route::delete('/writers/{id}', [WriterController::class, 'destroy']); */
+Route::put('/writers/{id}', [FormController::class, 'update']);
+Route::delete('/writers/{id}', [FormController::class, 'destroy']);
