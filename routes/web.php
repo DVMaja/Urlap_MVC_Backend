@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FormController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/forms', [FormController::class, 'index']);
-Route::post('/forms', [FormController::class, 'store']);
-Route::put('/writers/{id}', [FormController::class, 'update']);
-Route::delete('/writers/{id}', [FormController::class, 'destroy']);
