@@ -21,7 +21,7 @@ return [
 
     'allowed_origins' => [
         'https://www.thunderclient.com',
-        'http://127.0.0.1:5501', 'http://localhost:8080/', 'http://localhost:8000/'
+        'http://127.0.0.1:5501', 'http://localhost:8080/','http://127.0.0.1:5500', 'http://localhost:8000/'
     ], //valahogy ide kéne megadnom a frontend elérését?
 
     'allowed_origins_patterns' => [],
