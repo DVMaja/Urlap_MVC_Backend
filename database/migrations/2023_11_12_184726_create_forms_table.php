@@ -22,6 +22,8 @@ return new class extends Migration
         DB::table('forms')->insert([
             ['nev'=> 'Proba Ákos','szul_ev'=> '2000'],
             ['nev'=> 'Proba Ági','szul_ev'=> '1999'],
+            ['nev'=> 'Törlendő Tibi','szul_ev'=> '1999'],
+            ['nev'=> 'Megváltoztatandó Mária','szul_ev'=> '1999'],
         ]);
     }
 
