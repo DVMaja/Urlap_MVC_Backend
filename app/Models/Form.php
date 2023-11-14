@@ -11,6 +11,6 @@ class Form extends Model
 
     protected $fillable = [
         'nev',
-        'szul_ev',        
+        'szul',        
     ];
 }

@@ -15,15 +15,15 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->string('nev');
-            $table->integer('szul_ev');
+            $table->integer('szul');
             //$table->timestamps();
         });
 
         DB::table('forms')->insert([
-            ['nev'=> 'Proba Ákos','szul_ev'=> '2000'],
-            ['nev'=> 'Proba Ági','szul_ev'=> '1999'],
-            ['nev'=> 'Törlendő Tibi','szul_ev'=> '1999'],
-            ['nev'=> 'Megváltoztatandó Mária','szul_ev'=> '1999'],
+            ['nev'=> 'Proba Ákos','szul'=> '2000'],
+            ['nev'=> 'Proba Ági','szul'=> '1999'],
+            ['nev'=> 'Törlendő Tibi','szul'=> '1999'],
+            ['nev'=> 'Megváltoztatandó Mária','szul'=> '1999'],
         ]);
     }
 
