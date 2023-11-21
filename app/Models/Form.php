@@ -10,6 +10,7 @@ class Form extends Model
     use HasFactory;
 
     protected $fillable = [
+       //'id',
         'nev',
         'szul',        
     ];

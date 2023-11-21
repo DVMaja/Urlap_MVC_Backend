@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('nev');
             $table->integer('szul');
-            //$table->timestamps();
+            $table->timestamps();
         });
 
         DB::table('forms')->insert([

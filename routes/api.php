@@ -17,8 +17,9 @@ use App\Http\Controllers\FormController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::apiResource('/api/forms', FormController::class);
 
 Route::get('/forms', [FormController::class, 'index']);
 Route::post('/forms', [FormController::class, 'store']);
-Route::put('/writers/{id}', [FormController::class, 'update']);
-Route::delete('/writers/{id}', [FormController::class, 'destroy']);
+Route::put('/forms/{id}', [FormController::class, 'update']);
+Route::delete('/forms/{id}', [FormController::class, 'destroy']);
