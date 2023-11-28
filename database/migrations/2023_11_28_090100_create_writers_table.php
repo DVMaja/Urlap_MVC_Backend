@@ -19,12 +19,12 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::table('forms')->insert([
+        /* DB::table('writers')->insert([
             ['nev'=> 'Proba Ákos','szul'=> '2000'],
             ['nev'=> 'Proba Ági','szul'=> '1999'],
             ['nev'=> 'Törlendő Tibi','szul'=> '1999'],
             ['nev'=> 'Megváltoztatandó Mária','szul'=> '1999'],
-        ]);
+        ]); */
     }
 
     /**
